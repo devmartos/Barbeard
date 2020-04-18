@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barbeard Shop</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+    <!-- Menu superior -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Barbeard Shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-end">
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#cita">Pedir Cita</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#preguntas">Preguntas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros" data-toggle="modal" data-target="#nosotrosModal">La Barbería</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+              <img src="img/slide1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+    <!-- Servicios -->
+
+    <div class="container mt-5" id="servicios">
+        <h2 class="text-center">Servícios</h2>
+
+        <div class="row">
+
+            <div class="col order-last">
+                <div class="card">
+                    <img src="img/servicio1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Tratamiento</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="img/servicio2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Afeitado</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col order-first">
+                <div class="card">
+                    <img src="img/servicio3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Corte</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cita -->
+
+    <div class="container mt-4" id="cita">
+        <h2 class="text-center">Pedir Cita</h2>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-1 form-group">
+                <input type="text" class="form-control" placeholder="Nombre y Apellido">
+
+                <input type="text" class="form-control mt-2" placeholder="Teléfono">
+
+                <input type="text" class="form-control mt-2" placeholder="Fecha">
+
+                <textarea class="form-control mt-2" placeholder="Detalles" rows="5"></textarea>
+
+                <input type="checkbox" class="mt-3"> Acepto poner mi barba en vuestras manos.
+
+                <button class="btn btn-dark center-block mt-3">Cita</button>
+            </div>
+
+            <div class="col-md-4 offset-md-1">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Martes</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Jueves</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Viernes</td>
+                            <td>12:00 - 20:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sábado</td>
+                            <td>8:00 - 14:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Domingo</td>
+                            <td>Cerrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* Cerrado festivos.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Faq -->
+
+    <div class="container mt-4" id="preguntas">
+        <h2 class="text-center">Preguntas Frecuentes</h2>
+
+        <div class="accordion mt-4" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Con qué frecuencia debe cortarse el pelo?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Un uso regular vuelve el cabello de sus clientes más hermoso de forma duradera.
+                        Barbeard vuelve a sellar las puntas del pelo de nuevo en cada corte, se mantiene el cemento
+                        intercelular del pelo y este no se vuelve fino, quebradizo ni se le abren las puntas, sino que
+                        se convierte en vigoroso y saneado hasta las puntas. Aconsejamos un intervalo de 4 – 6 semanas.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué lograré con la Barber Shop?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Barbeard es un nuevo servicio con la que no sólo se diferenciará de otros, sino que con este no
+                        desperdiciará en el futuro ningún potencial. Despertará el entusiasmo de sus clientes con una
+                        nueva calidad de corte y de cabello, activará además a clientes de cabello largo que por fin se
+                        atreverán a acudir durante el crecimiento al peluquero y encontrará nuevos clientes a los que
+                        no hubiera accedido sin Barbeard.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Es moderna la Barbería?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Es la mejor Barberia del Barrio. Aún no hemos cortado ninguna oreja.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-1">
+                <h3>Contacto</h3>
+
+                <p>Barbeard Shop<br>
+                Teléfono: 31421423423<br>
+                Calle Falsa 123<br>
+                Email: cita@barbeard.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <img class="img-fluid" width="200px" src="img/footer.jpg">
+            </div>
+
+            <div class="col-md-3">
+                <h3>Menu</h3>
+
+                <ul>
+                    <li><a href="#servicios">Servícios</a></li>
+                    <li><a href="#cita">Pedir cita</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                    <li><a href="#about" data-toggle="modal" data-target="#aboutModal">Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="nosotrosModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">La Barbería</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Hace algo más de 5 años que inauguramos Barbeard Shop. Un espacio acogedor en el que te
+                asesoraremos para mejorar tu imagen y estilo. Profesionalidad, estilo, simpatía y buena música.
+                Redescubre el placer de cuidar (un poco más) de ti mismo.</p>
+              <img width="" class="img-fluid" src="img/nosotros.jpg" alt="hairdresser image 1">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Final -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>
+
